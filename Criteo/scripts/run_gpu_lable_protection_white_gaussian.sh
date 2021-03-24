@@ -1,0 +1,12 @@
+python ../main_wdl.py \
+--gpu_option \
+--device_number 4 \
+--num_epochs 10 \
+--batch_size 10240 \
+--lr_schedule 1e-4 \
+--train_file ../data/new_0.005train_0.9.csv \
+--test_file ../data/new_0.005test_0.1.csv \
+--noise_layer_function white_gaussian \
+--ratio 5.0 \
+--num_hints 5 \
+--period 50 \
